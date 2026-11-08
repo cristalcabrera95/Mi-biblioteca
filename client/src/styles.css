@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #f4f6f9;
+  color: #0e2841;
+}
+
+.hero {
+  background: #0e2841;
+  color: #fff;
+  border-bottom: 4px solid #e8202a;
+}
+
+.hero p {
+  color: #b9c6d6;
+}
+
+.stat {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e3e8ef;
+}
+
+.panel {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e3e8ef;
+  overflow: hidden;
+}
+
+.panel .p-datatable .p-datatable-thead > tr > th {
+  background: #f8fafc;
+  color: #4a5d73;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.detalle dt {
+  color: #6b7c90;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.detalle dd {
+  margin: 0.25rem 0 1rem;
+  font-weight: 500;
+}
+
+.contenedor {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Columnas que se ocultan en pantallas pequeñas */
+.desde-sm,
+.desde-md {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .desde-sm {
+    display: table-cell;
+  }
+}
+
+@media (min-width: 768px) {
+  .desde-md {
+    display: table-cell;
+  }
+}
+
+.acciones .p-button {
+  width: 2.25rem;
+  height: 2.25rem;
+}
